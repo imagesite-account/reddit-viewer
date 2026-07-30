@@ -1,0 +1,14 @@
+{
+  "subreddits": [
+    "programming",
+    "MachineLearning",
+    "LocalLLaMA"
+  ],
+  "sort": "hot",
+  "posts_per_sub": 15,
+  "comment_limit": 200,
+  "comment_depth": 6,
+  "delay_seconds": 2.0,
+  "retries": 3,
+  "user_agent": "github-pages-reader/0.1 (personal static mirror)"
+}

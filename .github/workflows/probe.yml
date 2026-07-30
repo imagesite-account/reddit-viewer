@@ -1,0 +1,20 @@
+name: probe
+
+# Run this FIRST, before you care about anything else in this repo.
+# It answers the only question that matters: will reddit talk to a
+# GitHub Actions runner today?
+#
+# Actions tab -> probe -> Run workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python fetch.py --probe

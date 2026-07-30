@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<title>Mirror</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- The capture strip. Everything on this page was frozen at one moment by a
+     machine somewhere else; the strip never lets you forget which moment. -->
+<header class="strip" id="strip">
+  <span class="dot" id="dot" aria-hidden="true"></span>
+  <span class="strip-main" id="strip-main">reading index&hellip;</span>
+  <span class="strip-note" id="strip-note"></span>
+</header>
+
+<main class="shell">
+
+  <section class="list-pane" id="list-pane" aria-label="Threads">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Filter titles  /" autocomplete="off"
+             spellcheck="false" aria-label="Filter threads by title">
+      <div class="subs" id="subs" role="group" aria-label="Filter by subreddit"></div>
+    </div>
+    <ol class="list" id="list"></ol>
+  </section>
+
+  <section class="read-pane" id="read-pane" aria-label="Thread" tabindex="-1">
+    <div class="empty" id="empty">
+      <p class="empty-title">Nothing open</p>
+      <p>Pick a thread on the left. <kbd>j</kbd> <kbd>k</kbd> to move, <kbd>enter</kbd> to open,
+         <kbd>/</kbd> to filter.</p>
+    </div>
+    <article class="thread" id="thread" hidden></article>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
