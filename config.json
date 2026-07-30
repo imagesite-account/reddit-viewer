@@ -2,7 +2,12 @@
   "subreddits": [
     "programming",
     "MachineLearning",
-    "LocalLLaMA"
+    "LocalLLaMA",
+    "ClaudeCode",
+    "Claude",
+    "Anthropic",
+    "OpenAI",
+    "ChatGPT"
   ],
   "sort": "hot",
   "posts_per_sub": 15,
